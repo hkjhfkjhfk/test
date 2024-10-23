@@ -15,7 +15,7 @@ jobs:
         run: docker login -u ilovecats33333 -p ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ilovecats33333/hi:latest .
+        run: docker build -t ilovecats33333/test:latest .
         
       - name: Push Docker image to Docker Hub
-        run: docker push ilovecats33333/hi:latest
+        run: docker push ilovecats33333/testlatest
